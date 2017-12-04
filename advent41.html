@@ -524,6 +524,7 @@ kebx eild nrskdr meja jxczomh gcne
 
 <script>
 
+
 var lines = $('#passphrases').html().split("\n");
 var output = "";
 for(var x=1;x<lines.length-1;x++) {
@@ -550,6 +551,8 @@ var x = setInterval(function(){
 	{	
 		var pass = $lines[i].innerText;
 		console.log(typeof(pass));
+		if(i == 10)
+			pageScroll();
 		if(pass.split(" ").length == (new Set(pass.split(" "))).size)
 		{
 			$($lines[i]).css("color", "orange");
@@ -563,10 +566,14 @@ var x = setInterval(function(){
 		}
 	}
 	i = i + 1;
-	window.scrollBy(0,1);
+	//window.scrollBy(0,1);
 
-}, 100);
+}, 200);
 
+function pageScroll() {
+    window.scrollBy(0,1);
+    scrolldelay = setTimeout(pageScroll,10);
+}
 	
 function stopit() {
 	clearInterval(x);
