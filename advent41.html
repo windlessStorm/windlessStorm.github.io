@@ -4,7 +4,34 @@
 <style>
 	div {
 		text-align: center;
+		transition: all 2s ease;
 	}
+	
+	span {
+		transition: all 0.6s ease;
+	}
+
+	
+	p {
+		text-align: center;
+		font: 20px arial, sans-serif;
+		height: 60px;
+		width: 1200px;
+		font-size: 300%;
+		letter-spacing: 5px;
+		transition: all 5s ease;
+		color: green;
+	}
+
+	hr {
+		border: 0;
+		border-top: 1px solid white;
+		margin: 1em 0;
+		padding: 0; 
+		transition: all 5s ease;
+	}
+
+
 </style>
 </head>
 <body>
@@ -522,6 +549,10 @@ zax xza admbc lvpzfeh auxn rwasj
 kebx eild nrskdr meja jxczomh gcne
 </div>
 
+<div id='line'> <hr> </div>
+
+<p></p>
+
 <script>
 
 
@@ -551,7 +582,7 @@ var x = setInterval(function(){
 	{	
 		var pass = $lines[i].innerText;
 		console.log(typeof(pass));
-		if(i == 10)
+		if(i == 20)
 			pageScroll();
 		if(pass.split(" ").length == (new Set(pass.split(" "))).size)
 		{
@@ -568,15 +599,20 @@ var x = setInterval(function(){
 	i = i + 1;
 	//window.scrollBy(0,1);
 
-}, 200);
+}, 105);
 
 function pageScroll() {
-    window.scrollBy(0,1);
-    scrolldelay = setTimeout(pageScroll,10);
+    window.scrollBy(0,2);
+    scrolldelay = setTimeout(pageScroll,8);
 }
 	
 function stopit() {
 	clearInterval(x);
+	$('hr').css('display', 'block');
+		$('hr').css('border-style', 'solid');
+		$('hr').css('border-width', '1px');
+		$('hr').css('border-color', 'CadetBlue');
+		$('p').text("Total valid passphrases = " + count);
 }
 
 /*
