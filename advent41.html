@@ -515,25 +515,29 @@ xle crcuc qkhnv crcuc oedez bjw pmwq
 xzzpiy cjwss jwscs apb bpa
 ydjhhf yeltadb lwi cjdcb ovaox xrdm vkxub
 zax xza admbc lvpzfeh auxn rwasj
-kebx eild nrskdr meja jxczomh gcne</div>
-</pre>
+kebx eild nrskdr meja jxczomh gcne
+</div></pre>
 
 <script>
 
-var lines = $('#passphrases').html().split("\n")
-var output = ""
+var lines = $('#passphrases').html().split("\n");
+var output = "";
 for(var x=1;x<lines.length-1;x++) {
-    output = output + "<span class='" + x + "'>" + lines[x] + "</span>"
+    output = output + "<span class='" + x + "'>" + lines[x] + "</span><br>";
 }
-$('#passphrases').html(output)
+$('#passphrases').html(output);
 
-ans = 0		
 
+
+var ans = 0;		
+
+/*
 for passphrase in lines:
 	passphrase = passphrase.split()
 	if(len(passphrase)==len(set(passphrase))):
 		ans += 1
 print ans		
+*/
 </script>
 </body>
 </html>
