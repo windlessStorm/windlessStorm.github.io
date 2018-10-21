@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/todo-app/js/chunk-vendors.e957f96f.js"
   },
   {
-    "revision": "62107d1438607aae0cba",
-    "url": "/todo-app/js/app.e3282690.js"
+    "revision": "d88b002e6169c6f14b03",
+    "url": "/todo-app/js/app.4b34274d.js"
   },
   {
     "revision": "826f73e5a4ab9bd02a39",
     "url": "/todo-app/js/about.3cb36f54.js"
   },
   {
-    "revision": "6b3d05eeaf91861b8358884884b7d378",
+    "revision": "c9fdb3197ec577510bb8f30503af1f73",
     "url": "/todo-app/index.html"
   },
   {
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/todo-app/css/chunk-vendors.b75fde49.css"
   },
   {
-    "revision": "62107d1438607aae0cba",
-    "url": "/todo-app/css/app.d2c97c26.css"
+    "revision": "d88b002e6169c6f14b03",
+    "url": "/todo-app/css/app.eae24086.css"
   }
 ];
